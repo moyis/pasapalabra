@@ -1,8 +1,12 @@
 plugins {
-    kotlin("jvm") version "2.1.20"
-    kotlin("plugin.spring") version "2.1.20"
-    id("org.springframework.boot") version "3.4.4"
-    id("io.spring.dependency-management") version "1.1.7"
+    val kotlinVersion = "2.1.20"
+    val springBootVersion = "3.4.5"
+    val springDependencyManagementVersion = "1.1.7"
+
+    kotlin("jvm") version kotlinVersion
+    kotlin("plugin.spring") version kotlinVersion
+    id("org.springframework.boot") version springBootVersion
+    id("io.spring.dependency-management") version springDependencyManagementVersion
 }
 
 group = "dev.moyis"
@@ -18,7 +22,8 @@ repositories {
     mavenCentral()
 }
 
-val springAiVersion = "1.0.0-M6"
+val restAssuredVersion = "5.5.1"
+val springAiVersion = "1.0.0"
 
 dependencies {
     // Web
@@ -33,11 +38,10 @@ dependencies {
     implementation("com.opencsv:opencsv:5.10")
 
     // AI
-    implementation("org.springframework.ai:spring-ai-openai-spring-boot-starter")
-
+    implementation("org.springframework.ai:spring-ai-starter-model-openai")
     // Test
     testImplementation("org.springframework.boot:spring-boot-starter-test")
-    testImplementation("io.rest-assured:kotlin-extensions:5.5.1")
+    testImplementation("io.rest-assured:kotlin-extensions:$restAssuredVersion")
 }
 
 dependencyManagement {
