@@ -22,7 +22,7 @@ repositories {
     mavenCentral()
 }
 
-val restAssuredVersion = "5.5.1"
+val restAssuredVersion = "5.5.5"
 val springAiVersion = "1.0.0"
 
 dependencies {
