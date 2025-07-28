@@ -35,7 +35,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
 
     // CSV
-    implementation("com.opencsv:opencsv:5.10")
+    implementation("com.opencsv:opencsv:5.12.0")
 
     // AI
     implementation("org.springframework.ai:spring-ai-starter-model-openai")
