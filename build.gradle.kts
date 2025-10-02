@@ -23,7 +23,7 @@ repositories {
 }
 
 val restAssuredVersion = "5.5.1"
-val springAiVersion = "1.0.0"
+val springAiVersion = "1.0.3"
 
 dependencies {
     // Web
